@@ -147,6 +147,7 @@ public class RegisterActivity extends AppCompatActivity implements View.OnClickL
                         public void onProgress(UploadTask.TaskSnapshot taskSnapshot) {
                             double progress = (100.0 * taskSnapshot.getBytesTransferred())/taskSnapshot.getTotalByteCount();
                             progressDialog.setMessage(((int)progress)+"% Uploaded...");
+                            Toast.makeText(getApplicationContext(),"TEST",Toast.LENGTH_LONG).show();
                         }
                     })
                     ;
